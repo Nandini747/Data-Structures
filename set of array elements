@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int arr[100];
+
+    printf("Enter number of elements in the array: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    if (n >= 5) {
+        printf("The 5th element in the array is: %d\n", arr[4]); // index 4 = 5th element
+    } else {
+        printf("Array has less than 5 elements.\n");
+    }
+
+    return 0;
+}
